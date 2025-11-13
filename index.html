@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ADX Tools — Free Web Tools Directory</title>
+  <meta name="description" content="ADX Tools — fast, free web utilities organized by category. Search and discover practical web apps: image, SEO, developer, and security tools." />
+  <link rel="canonical" href="https://yourdomain.com/" />
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="ADX Tools" />
+  <meta property="og:title" content="ADX Tools — Free Web Tools Directory" />
+  <meta property="og:description" content="Fast, lightweight web tools grouped by category. Find the right tool in seconds." />
+  <meta property="og:image" content="/assets/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Preconnect for fonts/CDN -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Minimal CSS critical inline could go here -->
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <script defer src="/assets/js/app.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"ADX Tools",
+    "url":"https://yourdomain.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://yourdomain.com/?s={search_term}",
+      "query-input": "required name=search_term"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">ADX Tools</a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Fast, free web tools — organized for you</h1>
+      <p class="lead">Search or browse categories to find the web tool you need.</p>
+      <div class="search">
+        <input id="search" type="search" placeholder="Search tools, e.g. 'image compress'">
+      </div>
+    </section>
+
+    <section class="filters">
+      <div id="categories" class="category-list"></div>
+    </section>
+
+    <section id="tools-grid" class="tools-grid" aria-live="polite">
+      <!-- Tool cards injected by JS -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>About ADX Tools</h4>
+        <p>Short mission line — fast, trustworthy web utilities for developers and creators.</p>
+      </div>
+      <div>
+        <h4>Popular Tools</h4>
+        <ul id="popular-tools"></ul>
+      </div>
+      <div>
+        <h4>Categories</h4>
+        <ul id="footer-cats"></ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Service</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">
+      &copy; <span id="year"></span> ADX Tools — All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
